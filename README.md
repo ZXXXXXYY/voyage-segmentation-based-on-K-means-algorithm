@@ -4,22 +4,8 @@ This project uses the navigation data of a bulk carrier to divide the ship's nav
 ## Features
 - ✅ Provide a dataset of bulk carrier voyage data for open-source use.
 - ✅ Classify sea conditions based on wind direction, wind speed, and current velocity from the voyage data.
-
-<div style="display: flex; justify-content: center; gap: 20px;">
-  <img src="https://github.com/ZXXXXXYY/voyage-segmentation-based-on-K-means-algorithm/blob/main/images/Fig.2.a.Clustered%20navigation%20data%20by%20sea%20condition%20features.jpg" alt="项目图片1" width="250" />
-  <img src="https://github.com/ZXXXXXYY/voyage-segmentation-based-on-K-means-algorithm/blob/main/images/Fig.2.b.Cluster%20centers.jpg" alt="项目图片2" width="250" />
-</div>
-
 - ✅ Determine the optimal number of clusters using the elbow method.
-<img src="https://github.com/ZXXXXXYY/voyage-segmentation-based-on-K-means-algorithm/blob/main/images/Fig.1.SSE%20curve%20for%20cluster%20number%20selection%20using%20the%20elbow%20method.jpg" alt="项目图片2" width="300" />
-
 - ✅ Segment the vessel’s voyage based on the established sea condition classification.
-<div style="display: flex; justify-content: center; gap: 20px;">
-  <img src="https://github.com/ZXXXXXYY/voyage-segmentation-based-on-K-means-algorithm/blob/main/images/Fig.3.a.Navigation%20route.jpg" alt="项目图片1" width="230" />
-  <img src="https://github.com/ZXXXXXYY/voyage-segmentation-based-on-K-means-algorithm/blob/main/images/Fig.3.b.Voyage%20segmentation%20by%20sea%20conditions.jpg" alt="项目图片2" width="230" />
-</div>
-
-
 ## Data
 The data was collected from sensors on the ocean-going training vessel Yuming, affiliated with Shanghai Maritime University, IMO: 9613886.
 ## Structure
@@ -28,8 +14,21 @@ The root folder contains the following subfolders and files.
 - **data_index.py:** The code loads a CSV file, cleans and renames columns, standardizes the time format, and saves the processed data to a new CSV file.
 - **data_processing.py:** The code processes a dataset by standardizing latitude/longitude, converting units, filtering out abnormal values, removing unnecessary columns, reordering columns, and saving the final data to a new CSV file.
 - **determine_the_number_of_clusters.py:** The code uses the Elbow method to determine the optimal number of clusters for KMeans clustering and plots the relationship between SSE and the number of clusters.
+<img src="https://github.com/ZXXXXXYY/voyage-segmentation-based-on-K-means-algorithm/blob/main/images/Fig.1.SSE%20curve%20for%20cluster%20number%20selection%20using%20the%20elbow%20method.jpg" alt="项目图片2" width="300" style="display: block; margin-left: auto; margin-right: auto;" />
+
 - **sea_condition_clustering.py:** The code performs K-Means clustering to divide the data into 6 sea condition categories and plots 3D scatter plots with cluster labels and cluster centers.
+<div style="display: flex; justify-content: center; gap: 20px;">
+  <img src="https://github.com/ZXXXXXYY/voyage-segmentation-based-on-K-means-algorithm/blob/main/images/Fig.2.a.Clustered%20navigation%20data%20by%20sea%20condition%20features.jpg" alt="项目图片1" width="250" style="display: block; margin-left: auto; margin-right: auto;" />
+  <img src="https://github.com/ZXXXXXYY/voyage-segmentation-based-on-K-means-algorithm/blob/main/images/Fig.2.b.Cluster%20centers.jpg" alt="项目图片2" width="250" style="display: block; margin-left: auto; margin-right: auto;" />
+</div>
+
 - **voyage_segmentation.py:** The code segments the voyage based on sea condition types and displays the ship's trajectory on two maps: one with sea condition classifications and the other without.
+
+<div style="display: flex; justify-content: center; gap: 20px;">
+  <img src="https://github.com/ZXXXXXYY/voyage-segmentation-based-on-K-means-algorithm/blob/main/images/Fig.3.a.Navigation%20route.jpg" alt="项目图片1" width="230" style="display: block; margin-left: auto; margin-right: auto;" />
+  <img src="https://github.com/ZXXXXXYY/voyage-segmentation-based-on-K-means-algorithm/blob/main/images/Fig.3.b.Voyage%20segmentation%20by%20sea%20conditions.jpg" alt="项目图片2" width="230" style="display: block; margin-left: auto; margin-right: auto;" />
+</div>
+
 ## Conclusions
 - Achieved basic data processing.
 - Used the elbow method to classify sea conditions into six categories.
