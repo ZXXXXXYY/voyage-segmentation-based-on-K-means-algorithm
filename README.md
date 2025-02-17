@@ -4,7 +4,12 @@ This project uses the navigation data of a bulk carrier to divide the ship's nav
 ## Features
 - ✅ Provide a dataset of bulk carrier voyage data for open-source use.
 - ✅ Classify sea conditions based on wind direction, wind speed, and current velocity from the voyage data.
-  ![项目图片](images/Fig.2.a.Clustered navigation data by sea condition features.jpg)
+<div style="display: flex; justify-content: space-between;">
+  <img src="https://github.com/ZXXXXXYY/voyage-segmentation-based-on-K-means-algorithm/blob/main/images/Fig.2.a.Clustered%20navigation%20data%20by%20sea%20condition%20features.jpg" alt="项目图片1" width="300" />
+  <img src="[https://github.com/ZXXXXXYY/voyage-segmentation-based-on-K-means-algorithm/blob/main/images/Fig.2.a.Clustered%20navigation%20data%20by%20sea%20condition%20features.jpg](https://github.com/ZXXXXXYY/voyage-segmentation-based-on-K-means-algorithm/blob/main/images/Fig.2.b.Cluster%20centers.jpg)" alt="项目图片2" width="300" />
+</div>
+
+
 
 - ✅ Determine the optimal number of clusters using the elbow method.
 - ✅ Segment the vessel’s voyage based on the established sea condition classification.
