@@ -22,10 +22,13 @@ The root folder contains the following subfolders and files.
 - Applied the K-means algorithm to divide the vessel's operational conditions into six categories.
 - Divided the voyage into eight segments based on the defined sea condition classifications.
 ## Shortcoming
-Due to the wind direction range being 0-360°, both 0° and 360° represent the same direction (north). However, since the K-means clustering algorithm calculates the distance of data points from the cluster center based on Euclidean distance, it inadvertently amplifies the difference between 0° and 360°, leading to an unreasonable calculation of SSE (Sum of Squared Errors). This, in turn, affects the determination of the optimal number of clusters.
+- Due to the wind direction range being 0-360°, both 0° and 360° represent the same direction (north). However, since the K-means clustering algorithm calculates the distance of data points from the cluster center based on Euclidean distance, it inadvertently amplifies the difference between 0° and 360°, leading to an unreasonable calculation of SSE (Sum of Squared Errors). This, in turn, affects the determination of the optimal number of clusters.
+- It can be observed from the segmentation results of the voyage_segmentation.py file that some segments are mixed with different sea conditions, which increases the complexity of segmentation.
 ## Attention
-To address the issue mentioned in the above shortcomings, this project, when using the elbow method to determine the optimal number of clusters, ignores the sharp drop in SSE caused by the transition from 360° to 0° in wind direction (i.e., the change between K=2 and K=3). The choice of K=6 as the number of clusters was based on the subjective judgment of the project owner and may not be entirely reasonable. If there are suggestions for improvement, we welcome participation in the extension and modification of this project or contact with the author.
+- To address the first issue mentioned in the above shortcomings, this project, when using the elbow method to determine the optimal number of clusters, ignores the sharp drop in SSE caused by the transition from 360° to 0° in wind direction (i.e., the change between K=2 and K=3). The choice of K=6 as the number of clusters was based on the subjective judgment of the project owner and may not be entirely reasonable. If there are suggestions for improvement, we welcome participation in the extension and modification of this project or contact with the author.
+- To address the second issue mentioned in the above shortcomings, delete certain data points from different sea conditions based on their proportion in the voyage. The deleted data is saved in the file 05-YuMing_final_processed_with_clusters.CSV located in the data folder.
 ## Contact Details
-Email: xinyuezhang1117@163.com
+- Email: xinyuezhang1117@163.com
+- Wechat： awordzxy
 
 
