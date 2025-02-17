@@ -13,7 +13,7 @@ The root folder contains the following subfolders and files.
 - **data:** This folder contains raw, interim and processed datasets used in this project, in csv format.
 - **data_index.py:** The code loads a CSV file, cleans and renames columns, standardizes the time format, and saves the processed data to a new CSV file.
 - **data_processing.py:** The code processes a dataset by standardizing latitude/longitude, converting units, filtering out abnormal values, removing unnecessary columns, reordering columns, and saving the final data to a new CSV file.
-- **determine_the_number_of_clusters.py:** The code uses the Elbow method to determine the optimal number of clusters for KMeans clustering and plots the relationship between SSE and the number of clusters.
+- **determine_the_number_of_clusters.py:** The code uses the Elbow method to determine the optimal number of clusters for K-Means clustering and plots the relationship between SSE and the number of clusters.
 
 <p align="center">
   <img src="https://github.com/ZXXXXXYY/voyage-segmentation-based-on-K-means-algorithm/blob/main/images/Fig.1.SSE%20curve%20for%20cluster%20number%20selection%20using%20the%20elbow%20method.jpg" alt="项目图片2" width="400" />
