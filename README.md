@@ -4,6 +4,8 @@ This project uses the navigation data of a bulk carrier to divide the ship's nav
 ## Features
 - ✅ Provide a dataset of bulk carrier voyage data for open-source use.
 - ✅ Classify sea conditions based on wind direction, wind speed, and current velocity from the voyage data.
+  ![项目图片](images/Fig.2.a.Clustered navigation data by sea condition features.jpg)
+
 - ✅ Determine the optimal number of clusters using the elbow method.
 - ✅ Segment the vessel’s voyage based on the established sea condition classification.
 ## Data
