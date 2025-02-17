@@ -4,7 +4,8 @@ This project uses the navigation data of a bulk carrier to divide the ship's nav
 ## Features
 - ✅ Provide a dataset of bulk carrier voyage data for open-source use.
 - ✅ Classify sea conditions based on wind direction, wind speed, and current velocity from the voyage data.
-<div style="display: flex; justify-content: space-between;">
+
+<div style="display: flex; justify-content: center; gap: 20px;">
   <img src="https://github.com/ZXXXXXYY/voyage-segmentation-based-on-K-means-algorithm/blob/main/images/Fig.2.a.Clustered%20navigation%20data%20by%20sea%20condition%20features.jpg" alt="项目图片1" width="250" />
   <img src="https://github.com/ZXXXXXYY/voyage-segmentation-based-on-K-means-algorithm/blob/main/images/Fig.2.b.Cluster%20centers.jpg" alt="项目图片2" width="250" />
 </div>
@@ -13,10 +14,11 @@ This project uses the navigation data of a bulk carrier to divide the ship's nav
 <img src="https://github.com/ZXXXXXYY/voyage-segmentation-based-on-K-means-algorithm/blob/main/images/Fig.1.SSE%20curve%20for%20cluster%20number%20selection%20using%20the%20elbow%20method.jpg" alt="项目图片2" width="300" />
 
 - ✅ Segment the vessel’s voyage based on the established sea condition classification.
-<div style="display: flex; justify-content: space-between;">
+<div style="display: flex; justify-content: center; gap: 20px;">
   <img src="https://github.com/ZXXXXXYY/voyage-segmentation-based-on-K-means-algorithm/blob/main/images/Fig.3.a.Navigation%20route.jpg" alt="项目图片1" width="230" />
   <img src="https://github.com/ZXXXXXYY/voyage-segmentation-based-on-K-means-algorithm/blob/main/images/Fig.3.b.Voyage%20segmentation%20by%20sea%20conditions.jpg" alt="项目图片2" width="230" />
 </div>
+
 
 ## Data
 The data was collected from sensors on the ocean-going training vessel Yuming, affiliated with Shanghai Maritime University, IMO: 9613886.
